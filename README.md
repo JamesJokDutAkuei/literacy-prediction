@@ -8,9 +8,15 @@ Educational inequality remains a critical challenge across Africa. This system a
 
 ## 🌐 Public API Endpoint
 
-**Base URL:** `https://literacy-prediction-production.up.railway.app`
+**Local Development URL:** `http://localhost:8001`
 
-**Swagger Documentation:** `https://literacy-prediction-production.up.railway.app/docs`
+**Swagger Documentation:** `http://localhost:8001/docs`
+
+> **Note:** To access the API, first run the FastAPI server locally:
+> ```bash
+> cd api
+> uvicorn fastapi_app:app --host 0.0.0.0 --port 8001 --reload
+> ```
 
 ### Available Endpoints:
 - `GET /` - API health check and information
@@ -127,7 +133,7 @@ literacy-prediction/
 
 ## 🎥 Demo Video
 
-**YouTube Link:** [5 Minute Demo](https://youtu.be/ZoQrpNn6pHs)
+**YouTube Link:** [5 Minute Demo](https://youtu.be/Gyoq93ho_jA)
 
 The demo video covers:
 - API endpoint testing via Swagger UI
@@ -137,9 +143,9 @@ The demo video covers:
 
 ## 🚀 Deployment
 
-The API is deployed on Railway.app with automatic HTTPS and global CDN for optimal performance.
+The API can be deployed on Railway.app, Heroku, or any cloud platform with automatic HTTPS and global CDN for optimal performance.
 
-**Live API:** https://literacy-prediction-production.up.railway.app/docs
+**Local Development:** http://localhost:8001/docs
 
 ## 📈 Model Performance
 
@@ -161,4 +167,4 @@ The system supports predictions for all 54 African Union member countries across
 
 **Developer:** James Jok Dut Akuei  
 **Repository:** https://github.com/JamesJokDutAkuei/literacy-prediction  
-**API Documentation:** https://literacy-prediction-production.up.railway.app/docs
+**API Documentation:** http://localhost:8001/docs (when running locally)
